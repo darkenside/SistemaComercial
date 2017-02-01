@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	
+  
+    <persistence-unit name="scJpa" transaction-type="JTA">
+
+  <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+      
+        <mapping-file>META-INF/mapping/Pessoa.hbm.xml</mapping-file>
+        <class>br.com.sistema.comercial.entidade.Pessoa</class>
+            <exclude-unlisted-classes>true</exclude-unlisted-classes>
+          
+        <properties>
+			<property name="hibernate.archive.autodetection" value="class" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect" />
+			<property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver" />
+			<property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+			<property name="hibernate.connection.username" value="user1" />
+			<property name="hibernate.connection.password" value="123" />
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.flushMode" value="FLUSH_AUTO" />
+		
+		</properties>  
+          
+          
+   </persistence-unit>
+</persistence>

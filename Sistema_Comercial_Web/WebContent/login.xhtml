@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:p="http://primefaces.org/ui"
+xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+ 
+<head>
+<link type="text/css" rel="stylesheet" href="#{facesContext.externalContext.requestContextPath}/resources/css/theme.css" />
+</head>
+  <h:body styleClass="body">
+  <h:form>
+  <center>
+  <h:messages errorClass="errorMessage" infoClass="infoMessage" warnClass="warnMessage"/>
+  <h:panelGrid columns="2">
+  <h:outputText value="Usuário : "/>
+  <h:inputText id="username" value="#{loginBean.username}"/>
+ 
+  <h:outputText value="Senha : "/>
+  <h:inputSecret id="password" value="#{loginBean.password}"/>
+ 
+  <h:commandButton value="OK" action="#{loginBean.login}" type="submit"/>
+  <h:commandButton value="Limpar" type="reset"/>
+ 
+  </h:panelGrid>
+ </center>
+ </h:form>
+</h:body>
+</html>

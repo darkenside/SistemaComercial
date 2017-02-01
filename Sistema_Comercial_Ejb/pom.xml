@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Sistema_Comercial_Ejb</groupId>
+  <artifactId>Sistema_Comercial_Ejb</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>ejb</packaging>
+  <build>
+    <sourceDirectory>ejbModule</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>ejbModule</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>2.4</version>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals><goal>copy-dependencies</goal></goals>
+                    </execution>
+                </executions>
+            </plugin>
+      
+      <plugin>
+        <artifactId>maven-ejb-plugin</artifactId>
+        <version>2.5</version>
+        <configuration>
+          <ejbVersion>3.2</ejbVersion>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+   <dependencies>
+  <dependency>
+    <groupId>commons-collections</groupId>
+    <artifactId>commons-collections</artifactId>
+    <version>3.2</version>
+</dependency>
+
+ <dependency>
+            <groupId>Sistema_Comercial_Jpa</groupId>
+            <artifactId>Sistema_Comercial_Jpa</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+
+
+<dependency>
+    <groupId>commons-net</groupId>
+    <artifactId>commons-net</artifactId>
+    <version>3.5</version>
+</dependency>
+<!-- 
+ <dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.2.6.Final</version>
+</dependency> -->
+
+<!-- https://mvnrepository.com/artifact/javax.ejb/ejb-api -->
+<dependency>
+    <groupId>javax.ejb</groupId>
+    <artifactId>ejb-api</artifactId>
+    <version>3.0</version>
+</dependency>
+
+
+  </dependencies>
+</project>

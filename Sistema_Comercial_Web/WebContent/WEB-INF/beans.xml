@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ ====================================================================
+ Copyright(c) by BRASILPREV
+
+ All rights reserved.
+
+ This software is confidential and proprietary information of
+ BRASILPREV ("Confidential Information").
+ You shall not disclose such Confidential Information and shall 
+ use it only in accordance with the terms of the license agreement
+ you entered with BRASILPREV.
+
+ ====================================================================
+-->
+
+<beans xmlns="http://java.sun.com/xml/ns/javaee"  
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+       xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">  
+</beans>
