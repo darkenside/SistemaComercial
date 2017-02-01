@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Sistema_Comercial_EAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="Sistema_Comercial_Ejb.jar" deploy-path="/" handle="module:/resource/Sistema_Comercial_Ejb/Sistema_Comercial_Ejb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Sistema_Comercial_Web.war" deploy-path="/" handle="module:/resource/Sistema_Comercial_Web/Sistema_Comercial_Web">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Sistema_Comercial_Jpa.jar" deploy-path="/lib" handle="module:/resource/Sistema_Comercial_Jpa/Sistema_Comercial_Jpa">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ejb-3.1.2.2.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Ejb/lib/javax.ejb-3.1.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.persistence.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Ejb/lib/javax.persistence.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="primefaces-6.0.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Web/lib/primefaces-6.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-core-5.2.0.Final.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Ejb/lib/hibernate-core-5.2.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.validation-1.0.0.GA.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Jpa/lib/javax.validation-1.0.0.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.faces-api-2.2.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Web/lib/javax.faces-api-2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.2.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Ejb/lib/commons-collections-3.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc6.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Ejb/lib/ojdbc6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.ejb-3.1.2.2.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Web/lib/javax.ejb-3.1.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="apache-commons-net.jar" deploy-path="/lib" handle="module:/classpath/lib/Sistema_Comercial_Ejb/lib/apache-commons-net.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
